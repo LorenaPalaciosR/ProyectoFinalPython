@@ -1,0 +1,9 @@
+# Archivos y carpetas generados por Spyder y Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.DS_Store
+# Configuraciones de Spyder
+.spyderproject

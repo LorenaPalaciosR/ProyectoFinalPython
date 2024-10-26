@@ -15,7 +15,9 @@ def preprocess_data(file_path):
         return None
 
     df['Rating'] = df['Rating'].apply(convert_rating)
-    df['Review Date'] = pd.to_datetime(df['Review Date'], errors='coerce')
+    df['Review Date'] = pd.to_datetime(df['Review Date'], errors='coerce') 
+    
+    
     
     return df
 

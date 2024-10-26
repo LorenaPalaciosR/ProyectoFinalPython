@@ -3,6 +3,9 @@
 from scripts.data_processing import preprocess_data
 from scripts.classification import classify_reviews
 from scripts.visualization import plot_wordcloud, plot_sentiment_distribution
+from scripts.Rating1 import preprocess_data2
+from scripts.Conteo_paisUS import preprocess_data3
+
 
 def main():
     # Cargar y preprocesar los datos
@@ -21,6 +24,9 @@ def main():
     
     # Mostrar la distribución de sentimientos
     plot_sentiment_distribution(df)
+    df_procesado = preprocess_data2('data/Amazon_Reviews.csv')
+    df_procesado2 = preprocess_data3('data/Amazon_Reviews.csv')
+    
     
 if __name__ == "__main__":
     main()

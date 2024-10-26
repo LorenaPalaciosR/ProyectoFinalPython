@@ -14,7 +14,7 @@ def classify_reviews(df):
    
     positive_words = ["great", "good", "love", "best", "always"]
     negative_words = ["worst", "not", "bad", "terrible", "never", "garbage"]
-    neutral_words = ["amazon", "Amazon", "service", "customer", "order", "prime"]
+    neutral_words = ["amazon","service", "customer", "order", "prime"]
     
     df['Sentiment_Title'] = df['Review Title'].apply(classify_review, args=(positive_words, negative_words, neutral_words))
     df['Sentiment_Text'] = df['Review Text'].apply(classify_review, args=(positive_words, negative_words, neutral_words))
